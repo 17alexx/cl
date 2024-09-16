@@ -1,0 +1,60 @@
+body {
+    background-color: black;
+}
+
+.anadiv {
+    height: 400px;
+    display: flex;
+    position: absolute;
+    top: 1rem;
+    top: 12rem;
+    left: 22rem;
+
+}
+
+.anadiv .bal:nth-child(odd) {
+    animation: anime 10s infinite;
+
+}
+
+.anadiv .bal:nth-child(even) {
+    animation: anime 5s infinite;
+
+}
+
+.bal {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #f3f3f3;
+    rotate: 35deg;
+    border-radius: 4px 73px 1px 61px;
+    opacity: 0.7;
+}
+
+@keyframes anime {
+    0% {
+        top: 50px;
+        /* bottom: 20px; */
+    }
+
+    25% {
+        top: 40px;
+        /* bottom: 30px; */
+    }
+
+    50% {
+        top: 30px;
+        /* bottom: 40px; */
+    }
+
+    75% {
+        top: 20px;
+        /* bottom: 50px; */
+    }
+
+    100% {
+        top: 10px;
+    }
+
+}
